@@ -1,0 +1,62 @@
+svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text{
+    font: Times;
+    font-size: 12px;
+    font-weight: bold;
+}
+.displayarea{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 800px;
+    height: 700px;
+}
+.jumbotron {
+    width: 800px;
+}
+#worcloud_crime_plot{
+    /*border: 3px solid brown;*/
+    /*border-radius: 5px;*/
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 700px;
+    height: 500px;
+
+}
+
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.icon-refresh-animate {
+	animation-name: rotateThis;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotateThis {
+	from { transform: scale( 1 ) rotate( 0deg );   }
+	to   { transform: scale( 1 ) rotate( 360deg ); }
+}

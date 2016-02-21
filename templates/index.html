@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DeepAge, Deep Learning based Age Determination Tool">
+    <meta name="author" content="Dushyanta Dhyani">
+    <meta name="keywords" content="Deep Learning , Age Estimation , Computer Vision , Machine Learning">
+
+    <title>DeepAge - Deep Learning Based Age Determination Tool</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grayscale.css') }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+ 
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">DeepAge</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tryit">TryIt</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#working">How it works?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#api">API</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">DeepAge</h1>
+                        <p class="intro-text">A Deep Learning based Age Estimation Tool from Facial Images<br></p>
+                        <a href="#tryit" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="tryit" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div id="placeholder">
+                    <img src="{{ url_for('static', filename='img/anon.png') }}" alt="placeholderimage" class="img-rounded" id="placeholderimg">
+                </div>
+                <span class="btn btn-default btn-file" id="prevbtn">
+                    Select &amp Preview <input type="file" id="imgInp">
+                </span>
+                <span class="btn btn-default btn-file" id="uploadbtn">
+                    Run Deep Age                    
+                </span>
+                <!-- <label class="btn btn-primary btn-file" for="my-file-selector">
+                    <input id="my-file-selector" type="file" style="display:none;">
+                    Select &amp Preview
+                </label> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How it works Section -->
+    <section id="working" class="content-section text-center">
+        <div class="working-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>How does it work?</h2>
+                    <p>To be updated soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- API Section -->
+    <section id="api" class="content-section text-center">
+        <div class="api-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Try Our API</h2>
+                    <p>Releasing Soon.</p>
+                    <a href="#api" class="btn btn-default btn-lg">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact the Developers</h2>
+                <p>Feel free to email us to provide some feedback on , report any bugs or know more about the product.</p>
+                <p>dush dot dhyani at gmail dot com</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Dushyanta Dhyani 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+
+    
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ url_for('static', filename='js/grayscale.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" charset="utf-8"></script>
+</body>
+</html>
