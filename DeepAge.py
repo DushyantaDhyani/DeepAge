@@ -17,6 +17,9 @@ app.config['TEMP_FOLDER'] = TEMP_FOLDER
 app.config['PIXELS']=64
 app.config['OPENCV_PATH']=OPENCV_PATH
 
+if not os.path.exists(app.config['TEMP_FOLDER']):
+    os.makedirs(app.config['TEMP_FOLDER'])
+
 # with open('net.pickle') as f:
 #     net=pickle.load(f)
 face_cascade = cv2.CascadeClassifier(app.config['OPENCV_PATH']+'data/haarcascades/haarcascade_frontalface_default.xml')
