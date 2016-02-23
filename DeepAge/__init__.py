@@ -9,10 +9,10 @@ import cv2
 from wand.image import Image
 
 TEMP_FOLDER='tmp/'
-OPENCV_PATH="/home/distro/Programs/opencv-3.0.0/"
+OPENCV_PATH="/mnt/vol/Programs/opencv/"
 ClassMapper={0:'0-2',1:'3-7',2:'8-12',3:'13-19',4:'20-36',5:'37-65',6:'66+'}
 app = Flask(__name__)
-app.config.from_object('config')
+app.config.from_pyfile('config.py')
 app.config['TEMP_FOLDER'] = TEMP_FOLDER
 app.config['PIXELS']=64
 app.config['OPENCV_PATH']=OPENCV_PATH
